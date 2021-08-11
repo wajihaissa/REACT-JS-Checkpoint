@@ -1,30 +1,19 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { Form, Button } from "react-bootstrap";
-
+import warsaw from "./warsaw.png";
 function App() {
   return (
     <div className="App">
-      <Form>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
-        </Form.Group>
-
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
-        </Form.Group>
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-      </Form>
+      <div className="" style={{ border: "solid 1px #000", maxWidth: "100vw" }}>
+        <h1 className="titel red"> your name here</h1>
+        <br/>
+        <img className="image" src={warsaw} alt="warsaw" />
+        <br/>
+        <img className="image" src="/rome.png" alt="rome"/>
+        <video width="320" height="240" controls>
+ 
+      </video>
+      </div>
     </div>
   );
 }
